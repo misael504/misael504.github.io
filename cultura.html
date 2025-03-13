@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura del Municipio de San Matías, El Paraíso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: bla;
+        }
+        header {
+            text-align: center;
+            background-color: #e0f642;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 48px; /* Tamaño grande para el título Historia */
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .content img {
+            width: 55%;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px;
+        }
+        .text {
+            width: 180%;
+            text-align: justify; /* Agregado para justificar el texto */
+        }
+        .content-left img {
+            order: -1;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        /* Media Queries para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Cambia la dirección del contenido a columna */
+                align-items: center; /* Centra los elementos */
+            }
+            .content img {
+                width: 80%; /* Hace las imágenes más pequeñas en pantallas pequeñas */
+                margin: 10px 0; /* Ajusta el margen */
+                display: block; /* Asegura que las imágenes sean bloques para centrarlas */
+                margin-left: auto; /* Centra las imágenes */
+                margin-right: auto; /* Centra las imágenes */
+            }
+            .text {
+                width: 100%; /* Ajusta el ancho del texto */
+                margin: 10px 0; /* Ajusta el margen */
+            }
+            .container {
+                width: 90%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+            }
+            header h1 {
+                font-size: 32px; /* Reduce el tamaño del título en pantallas pequeñas */
+            }
+
+            /* Cambia el orden de los elementos (contenido antes de la imagen) */
+            .content .text {
+                order: 1; /* Asegura que el texto esté antes de la imagen */
+            }
+            .content .image {
+                order: 2; /* Asegura que la imagen venga después del texto */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cultura</h1> <!-- Título adicional en grande -->
+    </header>
+
+    <div class="container">
+        <!-- Primer bloque de información -->
+        <div class="content">
+            <div class="text">
+                <h1>Fiestas Patronales y Religiosas</h1>
+                <p>San Matías, como muchos pueblos de Honduras, celebra su fiesta patronal en honor a su santo patrón, San Matías Apóstol. Estas festividades suelen incluir:</p>
+            <ul>
+                <li> Misas, procesiones, música, bailes tradicionales y actividades comunitarias.</li>
+                <li>Durante las fiestas, es común ver eventos como ferias, juegos mecánicos, ventas de comida típica y presentaciones de grupos musicales locales.</li>
+            </ul>
+                
+            </div>
+            <div class="image">
+                <img src="imagenes/fiesta patronal.jpg" alt="San Matías">
+            </div>
+        </div>
+
+        <!-- Segundo bloque de información -->
+        <div class="content content-left">
+            <div class="image">
+                <img src="imagenes/musica.jpg" alt="Creación del Municipio">
+            </div>
+            <div class="text">
+                <h2>Música y Danza</h2>
+                <ul>
+                <li>La música tradicional hondureña, como el punta, la sopa de caracol y otros ritmos autóctonos, suele estar presente en las celebraciones. También se escuchan géneros populares como la música ranchera y el reguetón.</li>
+                <li>Las danzas folclóricas, como la danza de los diablitos o la danza de los moros y cristianos, pueden ser parte de las festividades culturales.</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Tercer bloque de información -->
+        <div class="content">
+            <div class="text">
+                <h2>Gastronomía</h2>
+                <ul>
+                <li>La comida típica de la región incluye platillos como las baleadas, tamales, sopa de frijoles, carne asada y yuca con chicharrón. También es común el consumo de bebidas tradicionales como el atol y el horchata.</li>
+                <li>Durante las fiestas, se preparan platillos especiales como rosquillas, torrejas y nacatamales.</li>
+            </ul>
+            </div>
+            <div class="image">
+                <img src="imagenes/gastronomia.jpg" alt="Población y desarrollo">
+
+            </div>
+        </div>
+
+        <!-- Cuarto bloque de información -->
+        <div class="content content-left">
+            <div class="image">
+                <img src="imagenes/artesania.jpg" alt="Cultura y tradiciones">
+            </div>
+            <div class="text">
+                <h2>Artesanías</h2>
+                <p>•    En San Matías y sus alrededores, es posible encontrar artesanías locales, como tejidos, cerámica y productos hechos de madera. Estas artesanías suelen reflejar las tradiciones y el entorno natural de la región.</p>
+            </div>
+        </div>
+
+        <!-- Quinto bloque de información -->
+        <div class="content">
+            <div class="text">
+                <h2>Naturaleza y Turismo</h2>
+                <p>•    San Matías está rodeado de un entorno natural privilegiado, con montañas, ríos y bosques. Esto influye en la cultura local, ya que muchas actividades comunitarias están relacionadas con la naturaleza. Además, el turismo ecológico está ganando importancia en la región.</p>
+            </div>
+            <div class="image">
+                <img src="imagenes/naturaleza.jpg" alt="Geografía y entorno">
+            </div>
+        </div>
+
+        <!-- Sexto bloque de información -->
+        <div class="content content-left">
+            <div class="image">
+                <img src="imagenes/tradicion.jpg" alt="Desafíos y proyecciones">
+            </div>
+            <div class="text">
+                <h2>Educación y Tradiciones Familiares</h2>
+                <p>•    La educación es un valor importante en la comunidad, y las familias suelen transmitir tradiciones y conocimientos de generación en generación. Las reuniones familiares y las celebraciones comunitarias son parte integral de la vida en San Matías.</p>
+            </div>
+        
+
+
+</body>
+</html>

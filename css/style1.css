@@ -1,0 +1,140 @@
+/* CSS RESPONSIVO */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #444;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Estilos mejorados para el menú */
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container ul li {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-container ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.menu-container ul li a:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+.menu-container.active {
+    display: block;
+}
+
+/* Ajuste para imágenes en pantallas grandes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita que las imágenes se vayan a otra línea */
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px; /* Ajusta el ancho total del contenedor */
+    margin: auto; /* Centra el contenedor */
+}
+
+.image-container img {
+    width: 48%; /* Hace que las imágenes ocupen el 48% del contenedor */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+     margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .menu-icon {
+        font-size: 1.0em;
+        padding: 8px 12px;
+        position: absolute;
+        top: 160px;
+        right: 0px; /* Lo mueve a la derecha en móviles */
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión y Visión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+            position: relative; /* Para permitir el posicionamiento de la imagen en la parte inferior */
+            margin: 0;
+            padding: 0;
+            color: bl;
+
+        }
+        h1 {
+            color: #333;
+            margin-top: 44px; /* Mueve el título más abajo */
+        }
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .caja {
+            width: 40%;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify; /* Justificar el texto */
+        }
+        .navegacion {
+            margin-top: 180px; /* Aumenta el espacio superior para que esté más abajo */
+            text-align: right; /* Alinea a la derecha */
+            padding-right: 20px; /* Añade un pequeño margen derecho */
+        }
+        /* Estilo para la imagen en la esquina inferior izquierda */
+        .imagen-baja {
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+            width: 180px; /* Ajusta el tamaño de la imagen */
+        }
+
+        /* Media Queries para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column; /* Coloca los elementos en columna */
+                align-items: center;
+            }
+            .caja {
+                width: 80%; /* Ocupa el 80% del ancho en pantallas pequeñas */
+                margin-bottom: 20px;
+            }
+            .navegacion {
+                text-align: center; /* Centra el texto en la navegación */
+            }
+            .imagen-baja {
+                width: 150px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+                left: 50%; /* Centra la imagen horizontalmente */
+                transform: translateX(-50%); /* Ajusta para que quede perfectamente centrada */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Misión y Visión</h1>
+
+    <div class="contenedor">
+        <div class="caja">
+            <h1>Misión</h1>
+            <p>Somos una institución con identidad propia que vela por el desarrollo de sus habitantes, mejorando las condiciones de vida, promoviendo la educación, salud, entorno del medio ambiente y el mejoramiento de la infraestructura fomentando cada vez más la participación ciudadana para la toma de decisiones del municipio y la actuación honesta, eficiente y transparente del servidor municipal al servicio de la comunidad.</p>
+        </div>
+
+        <div class="caja">
+            <h1>Visión</h1>
+            <p>Ser un municipio desarrollado en forma sostenible e integral con oportunidades de trabajo, participación social activa de todos los sectores productivos haciendo un buen uso de sus propios recursos para mejorar las condiciones de vida de los habitantes, logrando alianza estratégica con instituciones públicas y privadas, que nos ayudará a tener un impacto en el desarrollo general de la población.</p>
+        </div>
+    </div>
+
+    <div class="navegacion">
+        <ul>
+            <li><a href="index.html">Volver a la página principal</a></li>
+        </ul>
+    </div>
+
+    <!-- Imagen en la esquina inferior izquierda -->
+    <img src="imagenes/bandera.jpg" alt="Imagen" class="imagen-baja">
+
+</body>
+</html>

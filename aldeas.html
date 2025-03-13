@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldeas de San Matías, El Paraíso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .aldea {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .aldea img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .aldea img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            transform: scale(1.2);
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .aldea {
+                width: 28%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Aldeas de San Matías, El Paraíso</h1>
+    <div class="container">
+        <div class="aldea" onclick="openModal('imagenes/corral falso.jpg')">
+            <h2>Corral Falso</h2>
+            <img src="imagenes/corral falso.jpg" alt="Corral Falso">
+            <p>Es conocida por sus personas trabajadoras y la producción de rosquillas.</p>
+        </div>
+        <div class="aldea" onclick="openModal('imagenes/espinito.jpg')">
+            <h2>El Espinito</h2>
+            <img src="imagenes/espinito.jpg" alt="El Espinito">
+            <p>Es una aldea donde la mayoría de sus habitantes se dedican a la agricultura.</p>
+        </div>
+        <div class="aldea" onclick="openModal('imagenes/guayacan.jpg')">
+            <h2>El Guayacán</h2>
+            <img src="imagenes/guayacan.jpg" alt="El Guayacán">
+            <p>Es famoso por sus rosquillas, ojaldres y la agricultura.</p>
+        </div>
+        <div class="aldea" onclick="openModal('imagenes/robledal.jpg')">
+            <h2>El Robledal</h2>
+            <img src="imagenes/robledal.jpg" alt="El Robledal">
+            <p>Es una aldea de personas luchadoras y trabajadoras.</p>
+        </div>
+        <div class="aldea"onclick="openModal('imagenes/concepcion1.jpg')">
+            <h2>La Concepción</h2>
+            <img src="imagenes/concepcion1.jpg" alt="La Concepción">
+            <p>Es conocida por su turismo de balneario y sus comidas típicas.</p>
+        </div>
+        <div class="aldea"onclick="openModal('imagenes/tunas.jpg')">
+            <h2>Las Tunas</h2>
+            <img src="imagenes/tunas.jpg" alt="Las Tunas">
+            <p>Es una aldea donde la mayoría de sus habitantes son agricultores.</p>
+        </div>
+        <div class="aldea" onclick="openModal('imagenes/san jeronimo.jpg')">
+            <h2>San Jerónimo</h2>
+            <img src="imagenes/san jeronimo.jpg" alt="San Jerónimo">
+            <p>Es una aldea de personas trabajadoras en el rubro de la agricultura y ganadería.</p>
+        </div>
+<div class="aldea" onclick="openModal('imagenes/santa rosa.jpg')">
+            <h2>Santa Rosa</h2>
+            <img src="imagenes/santa rosa.jpg" alt="Santa Rosa">
+            <p>Es conocida por personas laboriosas apasionadas a la agricultura y la producción de hortalizas.</p>
+        </div>
+    </div>
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg">
+    </div>
+    <script>
+        function openModal(src) {
+            let modalImg = document.getElementById('modalImg');
+            modalImg.src = src;
+            modalImg.style.transform = 'scale(1.2)';
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
